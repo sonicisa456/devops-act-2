@@ -22,5 +22,11 @@ def iniciar_instancia(instance_id):
     print(f"Instancia {instance_id} iniciada")
 
 
+def detener_instancia(instance_id):
+    ec2.stop_instances(InstanceIds=[instance_id])
+    print(f"Instancia {instance_id} detenida")
+
+
+
 if __name__ == "__main__":
     listar_instancias()
