@@ -22,6 +22,11 @@ def iniciar_instancia(instance_id):
     print(f"Instancia {instance_id} iniciada")
 
 
+if not instance_id:
+    print("Error: Debes proporcionar un ID de instancia")
+
+
+
 def detener_instancia(instance_id):
     ec2.stop_instances(InstanceIds=[instance_id])
     print(f"Instancia {instance_id} detenida")
