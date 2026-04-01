@@ -14,6 +14,7 @@ def listar_instancias():
             print(f"ID: {instance_id}")
             print(f"Estado: {estado}")
             print("-" * 20)
+	    print("todo bien :)")
 
 if __name__ == "__main__":
     listar_instancias()
