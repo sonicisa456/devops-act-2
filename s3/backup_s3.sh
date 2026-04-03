@@ -6,6 +6,7 @@ BUCKET=$2
 
 # Validación
 if [ -z "$DIRECTORIO" ] || [ -z "$BUCKET" ]; then
+    echo "validando directorio..."
     echo "Uso: ./backup_s3.sh <directorio> <bucket>"
     exit 1
 fi
