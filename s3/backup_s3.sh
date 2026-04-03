@@ -15,6 +15,7 @@ fi
 FECHA=$(date +%Y%m%d_%H%M%S)
 
 # Nombre del archivo comprimido
+echo "Archivo comprimido"
 ARCHIVO="backup_$FECHA.tar.gz"
 
 # Log
