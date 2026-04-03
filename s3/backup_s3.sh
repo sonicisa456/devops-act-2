@@ -32,6 +32,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Subir a S3
+echo "subiendo a S3"
 aws s3 cp $ARCHIVO s3://$BUCKET/
 
 if [ $? -ne 0 ]; then
