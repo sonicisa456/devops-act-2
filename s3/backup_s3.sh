@@ -19,6 +19,7 @@ echo "Archivo comprimido"
 ARCHIVO="backup_$FECHA.tar.gz"
 
 # Log
+"Generacion de log"
 LOG="logs/backup.log"
 
 echo "[$FECHA] Iniciando backup..." >> $LOG
