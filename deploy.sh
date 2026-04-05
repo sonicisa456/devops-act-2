@@ -1,10 +1,14 @@
 #!/bin/bash
 
+
+# Cargar configuración
+source config/config.env
+
+
 # Parámetros
 ACCION=$1
-INSTANCE_ID=$2
-DIRECTORIO=$3
-BUCKET=$4
+DIRECTORIO=$DIRECTORY
+BUCKET=$BUCKET_NAME
 
 LOG="logs/deploy.log"
 FECHA=$(date +%Y%m%d_%H%M%S)
